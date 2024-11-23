@@ -3,14 +3,31 @@
 <head>
     <title>Size Chart</title>
     <style>
-        /* ... same CSS styles as before ... */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e6e6e6;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th></th>
                 <th>XS</th>
                 <th>S</th>
                 <th>M</th>
@@ -20,8 +37,6 @@
         </thead>
         <tbody>
             <tr>
-                <td>Waist</td>
-                <td></td>
                 <td>25</td>
                 <td>28</td>
                 <td>30</td>
@@ -29,8 +44,6 @@
                 <td>32</td>
             </tr>
             <tr>
-                <td>Chest</td>
-                <td></td>
                 <td>34</td>
                 <td>34</td>
                 <td>38</td>
@@ -38,8 +51,6 @@
                 <td>41</td>
             </tr>
             <tr>
-                <td>Sleeve</td>
-                <td></td>
                 <td>23</td>
                 <td>24</td>
                 <td>24</td>
